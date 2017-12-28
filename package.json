@@ -1,0 +1,16 @@
+{
+  "name": "portfolio_site",
+  "version": "1.0.0",
+  "description": "Wassup devs,i know, i suck.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Anuar el Bakkali",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

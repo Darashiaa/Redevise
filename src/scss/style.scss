@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$bg-color: #fff;
+$bg-color-dark-theme:#053626;
+$main-color-dark-theme:#fff;
+$color: #053626;
+$main_font: 'Poppins', sans-serif;
+
+
+// high level targeting *, body, a, button, h1 etc
+
+body {
+    background: $bg-color;
+    color:$color;
+    font-family: $main_font;
+    text-align: center;
+    transition: background-color .5s,color .5s;
+    
+
+    &.dark-theme {
+        background-color: $bg-color-dark-theme;
+        color: $main-color-dark-theme;
+        transition: background-color .5s,color .5s;
+    }
+    
+
+   &.en :lang(nl){
+       display: none;
+   }
+
+   &.nl :lang(en){
+        display: none;
+   }
+}
+
+h1, h2 {
+    font-weight:bold;
+    letter-spacing: .1rem;
+}
+
+ .fa-lightbulb-o {
+    color:$color;
+        &.dark-theme {
+          
+            color: $main-color-dark-theme !important;
+            transition: background-color .5s,color .5s;
+        }
+}
+
+a.dark-theme {
+    color:white !important;
+}
+
+
+
+
+// NAVBAR 
+
+a.nav-link {
+    color: $color;
+
+    &.dark-theme {
+        background-color: $bg-color-dark-theme;
+        color: $main-color-dark-theme;
+        transition: background-color .5s,color .5s;
+    }
+}
+
+.navbar-toggler {
+    
+    border: 1px dashed $color;
+}
+
+i.fa.fa-bars {
+    font-size: 1.9rem;
+    color:$color;
+
+
+    &.dark-theme {
+        background-color: $bg-color-dark-theme;
+        color: $main-color-dark-theme;
+        transition: background-color .5s,color .5s;
+        
+    }
+}
+
+.nav-item{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin: 0 2em;
+    
+    
+    &:hover{
+        text-decoration: underline;
+        
+    }
+    
+}
+
+.button-lang{
+    background:none;
+    border:none;
+    color:$color;
+    font-weight:bold;
+    border:1px dashed #053626;
+
+
+    &.dark-theme {
+        background-color: $bg-color-dark-theme;
+        color: $main-color-dark-theme;
+        transition: background-color .5s,color .5s;
+        border:1px dashed #fff
+        
+    }
+
+   
+}
+
+@media(min-width:768px){
+    .nav-home{
+    margin-left:5em;
+    }
+}
+
+#nav-button{
+    margin:0.3em 0 0 0;
+}
+
+#button-lang{
+    border: none;
+    background-color:none;
+    cursor: pointer;
+}
+
+.fa-lightbulb-o:before {
+    font-size: 2rem;
+}
+
+
+
+// einde NAVBAR
+
+// introductie
+
+.overmij {
+    margin-top: 5em;
+}
+
+.ik-ben {
+    margin-top:4em;
+    font-weight: 700;
+}
+
+.omschrijving-ik{
+    font-size:1.1rem;
+    font-weight:400;
+}
+
+@media(min-width:769px){#icon-1 {
+    margin-left: 10em;
+}
+}
+.devicon {
+    font-size: 3em;
+    
+}
+
+@media(max-width: 769px){
+    .col-md-1.col-xs-3 {
+    width: 50%;
+}
+}
+.col-md-1 {
+    margin: 3em 0 0 0;
+}
+
+
+// FOOTER
+
+.copyklein {
+    font-size:.8em;
+    
+   
+}
+
+a {
+    color:$color;
+}
